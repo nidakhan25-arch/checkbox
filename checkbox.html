@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+    <input type="checkbox" name="sports" value="cricket">cricket<br>
+    <input type="checkbox" name="sports" value="football">football<br>
+    <input type="checkbox" name="sports" value="carrom">carrom<br>
+ <button onclick="getValue()">submit</button>
+  <script >
+        function getValue(){
+            let checkboxes=document.getElementsByName('sports');
+            let result ="";
+            for(var i=0;i<checkboxes.length;i++)
+        {
+           if (checkboxes[i].checked)
+           {
+        result+=checkboxes[i].value+" "+" "+" ";
+           }
+        }
+document.write("<p> sports::"+result+"</p>"); 
+       }
+        </script>
+</body>
+</html>
